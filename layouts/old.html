@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TV Layout</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			body {
+				/*display: grid;*/
+				/*grid-template-columns: 50% 50%;*/
+				/*padding: 10px;*/
+				/*grid-gap: 10px;*/
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			.row {
+				padding: 10px;
+				border-bottom: 1px solid #ccc;
+				display: flex;
+			}
+
+			.row:last-child {
+				border-bottom: 0;
+			}
+
+			.left-row-section {
+				min-width: 300px;
+			}
+
+			.right-row-section {
+				padding-left: 50px;
+			}
+
+			.left-card {
+				height: 50px;
+				margin-bottom: 10px;
+				display: flex;
+				font-weight: bold;
+				line-height: 50px;
+				font-size: 36px;
+			}
+
+			.left-card .logo {
+				height: 50px;
+				width: 50px;
+				margin-right: 10px;
+			}
+
+			.right-card {
+				height: 50px;
+				margin-bottom: 10px;
+				display: flex;
+				font-weight: bold;
+				line-height: 50px;
+				font-size: 36px;
+			}
+
+			.right-card .number {
+				color: #ccc;
+				margin-right: 10px
+			}
+
+			.right-card .logo {
+				height: 50px;
+			}
+
+			.right-card .logo img {
+				height: 100%;
+			}
+
+			.right-card .label {
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/hdmi-cable.svg">
+					</div>
+					<div class="label">
+						HDMI 1
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="number">
+						1
+					</div>
+					<div class="logo">
+						<img src="../images/nintendo-switch.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="number">
+						2
+					</div>
+					<div class="logo">
+						<img src="../images/wii.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="number">
+						3
+					</div>
+					<div class="logo">
+						<img src="../images/super-nt.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="number">
+						4
+					</div>
+					<div class="logo">
+						<img src="../images/avs.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/hdmi-cable.svg">
+					</div>
+					<div class="label">
+						HDMI 2
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="number">
+						1
+					</div>
+					<div class="logo">
+						<img src="../images/steam-logo.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="number">
+						2
+					</div>
+					<div class="logo">
+						<img src="../images/playstation-2.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="number">
+						3
+					</div>
+					<div class="logo">
+						<img src="../images/playstation-3.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/hdmi-cable.svg">
+					</div>
+					<div class="label">
+						HDMI 3
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/chromecast.svg">
+					</div>
+					<div class="label">
+						Chromecast
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/rca-cable-fill.svg">
+					</div>
+					<div class="label">
+						Component 1
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/snes.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/rca-cable-fill.svg">
+					</div>
+					<div class="label">
+						Component 2
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/sega-genesis.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/rca-cable.svg">
+					</div>
+					<div class="label">
+						AV 2
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/n64.svg">
+					</div>
+					<div class="label">
+						Nintendo 64
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/record-player.svg">
+					</div>
+					<div class="label">
+						Record Player
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="left-row-section">
+				<div class="left-card">
+					<div class="logo">
+						<img src="../images/tv.svg">
+					</div>
+					<div class="label">
+						TV
+					</div>
+				</div>
+			</div>
+			<div class="right-row-section">
+				<div class="right-card">
+					<div class="number">
+						3
+					</div>
+					<div class="logo">
+						<img src="../images/nes.svg">
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="logo">
+						<img src="../images/antenna.svg">
+					</div>
+					<div class="label">
+						Antenna
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

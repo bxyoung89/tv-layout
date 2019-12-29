@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TV Layout</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-areas:
+					'a space space  b'
+					'c space space b'
+					'e space space h'
+					'e f g h'
+					'i j k l'
+					'i j k l'
+					;
+				height: 100%;
+				width: 100%;
+			}
+
+			.cell {
+				border: 1px solid black;
+				padding: 10px;
+			}
+
+			.a {
+				grid-area: a;
+			}
+
+			.b {
+				grid-area: b;
+			}
+
+			.c {
+				grid-area: c;
+			}
+
+			.e {
+				grid-area: e;
+			}
+
+			.f {
+				grid-area: f;
+			}
+
+			.g {
+				grid-area: g;
+			}
+
+			.h {
+				grid-area: h;
+			}
+
+			.i {
+				grid-area: i;
+			}
+
+			.j {
+				grid-area: j;
+			}
+
+			.k {
+				grid-area: k;
+			}
+
+			.l {
+				grid-area: l;
+			}
+
+			.console {
+				border: 1px solid #CCC;
+				border-radius: 4px;
+				padding: 10px;
+				font-size: 20px;
+				display: flex;
+				align-items: stretch;
+				margin-bottom: 10px;
+			}
+
+			.console.vertical {
+				flex-direction: column;
+				margin-right: 10px;
+				height: 100%;
+			}
+
+			.console.vertical .logo {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+
+			.logo {
+				max-height: 60px;
+				margin-right: 10px;
+			}
+
+			img {
+				display: block;
+				height: 100%;
+			}
+
+			.console-data {
+				flex-grow: 1;
+			}
+
+			.console-name {
+				font-size: 24px;
+				white-space: nowrap;
+			}
+
+			.hdmi-label {
+				font-family: monospace;
+				color: #888;
+				text-transform: uppercase;
+				font-size: 16px;
+			}
+
+			.cell-b-grid {
+				display: flex;
+			}
+
+			.cell-b-left {
+				min-width: 30%;
+				display: flex;
+			}
+
+			.cell-b-right {
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+			}
+
+			.cell-f {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+
+			.cell-f > * {
+				margin: 0;
+				width: calc(50% -  10px);
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="cell a">
+				<div class="console">
+					<div class="logo">
+						<img src="../images/super-nt.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							Mini Consoles
+						</div>
+						<div class="hdmi-label">
+							hdmi 2
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell b cell-b-grid">
+				<div class="cell-b-left">
+					<div class="console vertical">
+						<div class="logo">
+							<img src="../images/nintendo-switch.svg" />
+						</div>
+						<div class="console-data">
+							<div class="console-name">
+								Nintendo Switch
+							</div>
+							<div class="hdmi-label">
+								hdmi 3
+							</div>
+						</div>
+					</div>
+					<div class="console vertical">
+						<div class="logo">
+							<img src="../images/steam-logo.svg" />
+						</div>
+						<div class="console-data">
+							<div class="console-name">
+								Steam Link
+							</div>
+							<div class="hdmi-label">
+								hdmi 4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cell-b-right">
+					<div class="console">
+						<div class="logo">
+							<img src="../images/playstation-3.svg" />
+						</div>
+						<div class="console-data">
+							<div class="console-name">
+								PlayStation 3
+							</div>
+							<div class="hdmi-label">
+								hdmi 3
+							</div>
+						</div>
+					</div>
+					<div class="console">
+						<div class="logo">
+							<img src="../images/ps4.svg" />
+						</div>
+						<div class="console-data">
+							<div class="console-name">
+								PlayStation 4
+							</div>
+							<div class="hdmi-label">
+								hdmi 1
+							</div>
+						</div>
+					</div>
+					<div class="console">
+						<div class="logo">
+							<img src="../images/xbox-360.svg" />
+						</div>
+						<div class="console-data">
+							<div class="console-name">
+								XBOX 360
+							</div>
+							<div class="hdmi-label">
+								hdmi 3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell c">
+				<div class="console">
+					<div class="logo">
+						<img src="../images/avs.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							AVS
+						</div>
+						<div class="hdmi-label">
+							hdmi 2
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell e">
+				<div class="console">
+					<div class="logo">
+						<img src="../images/n64.svg" />
+					</div>
+					<div class="logo">
+						<img src="../images/record-player.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							Nintendo 64
+						</div>
+						<div class="hdmi-label">
+							hdmi 4
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell f cell-f">
+				<div class="console">
+					<div class="logo">
+						<img src="../images/wii.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							Wii
+						</div>
+						<div class="hdmi-label">
+							hdmi 2
+						</div>
+					</div>
+				</div>
+				<div class="console">
+					<div class="logo">
+						<img src="../images/wiiu.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							Wii U
+						</div>
+						<div class="hdmi-label">
+							hdmi 2
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell g">
+				<div class="console">
+					<div class="logo">
+						<img src="../images/playstation-2.svg" />
+					</div>
+					<div class="console-data">
+						<div class="console-name">
+							PlayStation 2
+						</div>
+						<div class="hdmi-label">
+							hdmi 4
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell h"></div>
+			<div class="cell i"></div>
+			<div class="cell j"></div>
+			<div class="cell k"></div>
+			<div class="cell l"></div>
+		</div>
+	</body>
+</html>
